@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mastodon Sharing Button v1.0.0\n"
+"POT-Creation-Date: 2021-04-17 18:41+0200\n"
+"PO-Revision-Date: 2021-04-17 18:41+0200\n"
+"Last-Translator: \n"
+"Language-Team: Armand Philippot <contact@armandphilippot.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: select-instance.php:31
+msgid "Mastodon Sharing Button is not configured."
+msgstr "Mastodon Sharing Button is not configured."
+
+#: select-instance.php:55 select-instance.php:65
+msgid "Share on Mastodon"
+msgstr "Share on Mastodon"
+
+#: select-instance.php:73
+msgid "Shared content:"
+msgstr "Shared content:"
+
+#. TRANSLATORS: %1$s: opening HTML wrapper. %2$s: closing HTML wrapper. %3$s Shared URL.
+#: select-instance.php:79
+#, php-format
+msgid "%1$sURL:%2$s %3$s"
+msgstr "%1$sURL:%2$s %3$s"
+
+#. TRANSLATORS: %1$s: Opening HTML wrapper. %2$s: Closing HTML wrapper. %3$s: Page title.
+#: select-instance.php:90
+#, php-format
+msgid "%1$sTitle:%2$s %3$s"
+msgstr "%1$sTitle:%2$s %3$s"
+
+#. TRANSLATORS: %s: a HTML wrapper.
+#: select-instance.php:104
+#, php-format
+msgid "%sError:%s You must define an instance URL before sharing."
+msgstr "%sError:%s You must define an instance URL before sharing."
+
+#: select-instance.php:108
+msgid ""
+"Either the field is empty or the URL provided is not a Mastodon instance."
+msgstr ""
+"Either the field is empty or the URL provided is not a Mastodon instance."
+
+#: select-instance.php:114
+msgid "Select your instance."
+msgstr "Select your instance."
+
+#: select-instance.php:117
+msgid "Enter your instance's address:"
+msgstr "Enter your instance's address:"
+
+#: select-instance.php:126
+#, php-format
+msgid "Example: %s"
+msgstr "Example: %s"
+
+#: select-instance.php:130
+msgid "Share"
+msgstr "Share"
+
+#. TRANSLATORS: %s: the project link.
+#: select-instance.php:152
+#, php-format
+msgid "Mastodon Sharing Button. See project on %sGithub%s."
+msgstr "Mastodon Sharing Button. See project on %sGithub%s."
+
+#, php-format
+#~ msgid "URL: %s"
+#~ msgstr "URL: %s"
+
+#~ msgid "Error:"
+#~ msgstr "Error:"
