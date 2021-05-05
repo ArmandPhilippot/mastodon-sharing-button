@@ -55,6 +55,7 @@ if (msb_is_form_sent() && msb_is_instance_set($msb_instances)) {
     <title><?php echo htmlspecialchars(_('Share on Mastodon')); ?></title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="robots" content="noindex">
 </head>
 <body>
     <div class="wrapper">
