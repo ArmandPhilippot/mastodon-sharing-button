@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mastodon Sharing Button v1.0.0\n"
-"POT-Creation-Date: 2021-04-17 18:41+0200\n"
+"POT-Creation-Date: 2021-05-10 16:02+0200\n"
 "PO-Revision-Date: 2021-04-17 12:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: Armand Philippot <contact@armandphilippot.com>\n"
@@ -19,55 +19,63 @@ msgstr ""
 msgid "Mastodon Sharing Button is not configured."
 msgstr ""
 
-#: select-instance.php:55 select-instance.php:65
+#: select-instance.php:33
+msgid "Token is not set."
+msgstr ""
+
+#: select-instance.php:36
+msgid "Cache folder does not exist."
+msgstr ""
+
+#: select-instance.php:63 select-instance.php:74
 msgid "Share on Mastodon"
 msgstr ""
 
-#: select-instance.php:73
+#: select-instance.php:82
 msgid "Shared content:"
 msgstr ""
 
 #. TRANSLATORS: %1$s: opening HTML wrapper. %2$s: closing HTML wrapper. %3$s Shared URL.
-#: select-instance.php:79
+#: select-instance.php:88
 #, php-format
 msgid "%1$sURL:%2$s %3$s"
 msgstr ""
 
 #. TRANSLATORS: %1$s: Opening HTML wrapper. %2$s: Closing HTML wrapper. %3$s: Page title.
-#: select-instance.php:90
+#: select-instance.php:99
 #, php-format
 msgid "%1$sTitle:%2$s %3$s"
 msgstr ""
 
 #. TRANSLATORS: %s: a HTML wrapper.
-#: select-instance.php:104
+#: select-instance.php:113
 #, php-format
 msgid "%sError:%s You must define an instance URL before sharing."
 msgstr ""
 
-#: select-instance.php:108
+#: select-instance.php:117
 msgid "Either the field is empty or the URL provided is not a Mastodon instance."
 msgstr ""
 
-#: select-instance.php:114
+#: select-instance.php:123
 msgid "Select your instance."
 msgstr ""
 
-#: select-instance.php:117
+#: select-instance.php:126
 msgid "Enter your instance's address:"
 msgstr ""
 
-#: select-instance.php:126
+#: select-instance.php:135
 #, php-format
 msgid "Example: %s"
 msgstr ""
 
-#: select-instance.php:130
+#: select-instance.php:139
 msgid "Share"
 msgstr ""
 
 #. TRANSLATORS: %s: the project link.
-#: select-instance.php:152
+#: select-instance.php:161
 #, php-format
 msgid "Mastodon Sharing Button. See project on %sGithub%s."
 msgstr ""

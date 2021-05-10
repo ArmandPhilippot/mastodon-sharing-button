@@ -27,13 +27,21 @@ msb_set_locale($msb_formatted_locale);
 // Get Mastodon instances.
 $msb_instances = array();
 
-if (empty($msb_token_key)) {
-    echo htmlspecialchars(_('Mastodon Sharing Button is not configured.'));
+if (empty($msb_token_key) || 'yourOwnTokenKey' === $msb_token_key || !file_exists(dirname($msb_instances_path))) {
+    echo htmlspecialchars(_('Mastodon Sharing Button is not configured.') . "\n");
+    if (empty($msb_token_key) || 'yourOwnTokenKey' === $msb_token_key) {
+        echo htmlspecialchars(_('Token is not set.') . "\n");
+    }
+    if (!file_exists(dirname($msb_instances_path))) {
+        echo htmlspecialchars(_('Cache folder does not exist.') . "\n");
+    }
 } else {
     $msb_instances = msb_get_instances($msb_token_key, $msb_instances_path);
 }
 
-$msb_instance_example = strip_tags($msb_instances[ array_rand($msb_instances) ]);
+$msb_is_valid_instances_list = is_array($msb_instances) && (count($msb_instances) > 1);
+
+$msb_instance_example = $msb_is_valid_instances_list ? strip_tags($msb_instances[ array_rand($msb_instances) ]) : '';
 
 // Handle redirection.
 $msb_share_url    = ( ! empty($_GET['url']) ) ? htmlspecialchars($_GET['url']) : '';

@@ -62,6 +62,10 @@ function msb_is_cache_expired(string $file_path, int $cache_duration) : bool
  */
 function msb_store_in(array $instances, string $file_path)
 {
+    if (!file_exists(dirname($file_path))) {
+        return;
+    }
+
     $handle = fopen($file_path, 'w');
     fwrite($handle, "<?php\n");
     fwrite($handle, 'return $instances = ' . var_export($instances, true) . ";\n");
