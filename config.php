@@ -21,9 +21,11 @@ $msb_token_key = 'yourOwnTokenKey';
 
 
 /**
- * The path where the cached instances list must be written.
+ * The path where the cached instances list must be written. This path must
+ * exist. Default is `../cache/instances-list.php`. The cache folder must be
+ * created.
  */
-$msb_instances_path = dirname( __FILE__ ) . '/cache/instances-list.php';
+$msb_instances_path = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'cache' . DIRECTORY_SEPARATOR . 'instances-list.php';
 
 /**
  * The Mastodon Sharing Button will check if the HTTP accepted locales have a
