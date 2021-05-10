@@ -102,6 +102,7 @@ function msb_define_locale(string $default_locale)
 {
     $http_language = msb_get_languages_from_http();
     $http_locale   = str_replace('-', '_', $http_language);
+    $http_locale = is_array($http_locale) ? $http_locale : array($http_locale);
     $locale        = msb_get_valid_locale($http_locale, $default_locale);
 
     return $locale;
