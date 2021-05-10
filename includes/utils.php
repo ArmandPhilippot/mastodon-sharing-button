@@ -16,8 +16,9 @@
  *
  * @return boolean True if the form is sent.
  */
-function msb_is_form_sent() {
-	return ( isset( $_POST['instance-sent'] ) && 'sent' === $_POST['instance-sent'] && isset( $_SERVER['REQUEST_METHOD'] ) && 'POST' === $_SERVER['REQUEST_METHOD'] );
+function msb_is_form_sent()
+{
+    return ( isset($_POST['instance-sent']) && 'sent' === $_POST['instance-sent'] && isset($_SERVER['REQUEST_METHOD']) && 'POST' === $_SERVER['REQUEST_METHOD'] );
 }
 
 /**
@@ -26,6 +27,7 @@ function msb_is_form_sent() {
  * @param array $msb_instances The Mastodon instances.
  * @return boolean True if an instance URL is set.
  */
-function msb_is_instance_set( $msb_instances ) {
-	return ( isset( $_POST['instance-url'] ) && ! empty( $_POST['instance-url'] ) && in_array( $_POST['instance-url'], $msb_instances ) );
+function msb_is_instance_set($msb_instances)
+{
+    return ( isset($_POST['instance-url']) && ! empty($_POST['instance-url']) && in_array($_POST['instance-url'], $msb_instances) );
 }
